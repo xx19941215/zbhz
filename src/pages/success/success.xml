@@ -1,0 +1,16 @@
+<view class="container success">
+  <image class="success-bg" src="/images/success/third_bg@2x.png"></image>
+  <view class="success-ctn">
+    <view>
+      <image class="preview" src="{{ filePathA }}" mode="aspectFill"></image>
+      <image src="/images/upload/second_image_frame_b@2x.png"></image>
+    </view>
+    <view>
+      <image class="preview" src="{{ filePathB }}" mode="aspectFill"></image>
+      <image src="/images/upload/second_image_frame_a@2x.png"></image>
+    </view>
+  </view>
+  <view class="success-btn" bindtap="toResult">
+    <image src="/images/success/third_bt_ckjg.png"></image>
+  </view>
+</view>

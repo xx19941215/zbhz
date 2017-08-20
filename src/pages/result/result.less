@@ -1,0 +1,129 @@
+.title {
+  font-size: 40rpx;
+}
+
+.result-ctn {
+  background: url("http://tupiancdn.qiniudn.com/zbhz/fourth_bg@2x.png") no-repeat;
+  background-size: cover;
+  width: 100vw;
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.result {
+  //overflow: scroll;
+  .result-bg {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .img-ctn {
+    padding-top: 1rem;
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+
+    view {
+      position: relative;
+    }
+
+    image {
+      width: 130px;
+      height: 130px;
+    }
+
+    .preview {
+      position: absolute;
+      width: 105px;
+      height: 105px;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+}
+
+.result-index {
+  background: url("http://tupiancdn.qiniudn.com/index@2x.png") no-repeat;
+  background-size: contain;
+  height: 5rem;
+  background-position: center;
+  width: 100 rpx;
+  position: relative;
+
+  text {
+    position: absolute;
+    top: 40%;
+    right: 35%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+
+.result-story {
+  text-align: center;
+
+  image {
+    width: 216px;
+    height: 119px;
+  }
+}
+
+.result-radar-ctn {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.result-radar {
+  background-image: url("http://tupiancdn.qiniudn.com/data_bg_gray@2x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 15rem;
+  background-position: center;
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+
+  canvas {
+    width: 320px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-45%);
+  }
+}
+
+.result-content-ctn {
+  display: flex;
+  justify-content: space-around;
+}
+
+.result-content {
+  //background-image: url("http://tupiancdn.qiniudn.com/analysis_bg_blue@2x.png");
+  //background-repeat: no-repeat;
+  //background-size: contain;
+  //height: 15rem;
+  //background-position: center;
+  //width: 80vw;
+  padding: 4rem 2rem;
+  box-sizing: border-box;
+  font-size: 0.8rem;
+}
+
+.coupon-btn {
+  position: absolute;
+  bottom: 1rem;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+
+  image {
+    width: 312px;
+    height: 62px;
+    transform: scale(0.7);
+  }
+}

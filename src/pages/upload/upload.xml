@@ -1,0 +1,16 @@
+<view class="container upload">
+  <image class="upload-bg" src="/images/upload/second_bg@2x.png"></image>
+  <view class="upload-ctn">
+    <view bindtap="chooseImage" data-which="a">
+      <image class="preview" src="{{ filePathA }}" mode="aspectFill"></image>
+      <image src="/images/upload/second_image_frame_a@2x.png"></image>
+    </view>
+    <view bindtap="chooseImage" data-which="b">
+      <image class="preview" src="{{ filePathB }}" mode="aspectFill"></image>
+      <image src="/images/upload/second_image_frame_b@2x.png"></image>
+    </view>
+  </view>
+  <view class="upload-btn" bindtap="toSuccess">
+    <image src="/images/upload/second_bt_sczp@2x.png"></image>
+  </view>
+</view>

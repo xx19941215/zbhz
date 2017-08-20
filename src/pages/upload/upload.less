@@ -1,0 +1,51 @@
+.title {
+  font-size: 40rpx;
+}
+
+.upload {
+  position: relative;
+
+  .upload-bg {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .upload-ctn {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    //padding: 0 1rem;
+    top: 55%;
+    left: 0;
+    justify-content: space-around;
+
+    view {
+      position: relative;
+    }
+
+    image {
+      width: 130px;
+      height: 130px;
+    }
+
+    .preview {
+      position: absolute;
+      width: 110px;
+      height: 110px;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+
+  .upload-btn {
+    position: absolute;
+    bottom: 1rem;
+
+    image {
+      width: 312px;
+      height: 62px;
+      transform: scale(0.7);
+    }
+  }
+}

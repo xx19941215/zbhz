@@ -1,0 +1,9 @@
+<!-- 可用组件：https://mp.weixin.qq.com/debug/wxadoc/dev/component/ -->
+<view class="container">
+  <view class="home">
+    <image class="index-bg" src="/images/index/home_bg@2x.png"></image>
+    <navigator class="" url="../upload/upload">
+      <image class="to-divine" src="/images/index/home_bt_lijizhanbu.png"></image>
+    </navigator>
+  </view>
+</view>

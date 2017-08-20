@@ -1,0 +1,37 @@
+<!-- 可用组件：https://mp.weixin.qq.com/debug/wxadoc/dev/component/ -->
+<view class="result">
+    <view class="result-ctn">
+       <view class="img-ctn">
+           <view>
+               <image class="preview" src="{{ filePathA }}" mode="aspectFill"></image>
+               <image src="/images/upload/second_image_frame_b@2x.png"></image>
+           </view>
+           <view>
+               <image class="preview" src="{{ filePathB }}" mode="aspectFill"></image>
+               <image src="/images/upload/second_image_frame_a@2x.png"></image>
+           </view>
+       </view>
+        <view class="result-index">
+            <text>{{ xiangSiDu }}</text>
+        </view>
+        <view class="result-story">
+            <image src="/images/result/{{ currentFace }}"></image>
+        </view>
+        <view class="result-radar-ctn" wx:if="{{ !isSahre }}">
+            <view class="result-radar">
+                <canvas canvas-id="radarCanvas" class="canvas" bindtouchstart="touchHandler"></canvas>
+            </view>
+        </view>
+        <view class="result-content-ctn" wx:if="{{ !isSahre }}">
+            <view class="result-content">
+              {{ introduction }}
+            </view>
+        </view>
+        <view class="coupon-btn" bindtap="coupon">
+            <image src="/images/result/fourth_bt_lqdqxw@2x.png"></image>
+        </view>
+        <navigator class="coupon-btn" url="../index/index" wx:if="{{ isSahre }}">
+          <image class="to-divine" src="/images/result/fifth_bt_wyyhz@2x.png"></image>
+        </navigator>
+    </view>
+</view>
