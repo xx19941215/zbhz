@@ -58,7 +58,7 @@ App({
     wx.getStorage({
       key: 'codes',
       success: function(res) {
-          console.log(res.data)
+          // console.log(res.data)
           codes = res.data;
       } 
     })
@@ -71,7 +71,7 @@ App({
     wx.getStorage({
       key: 'codes',
       success: function(res) {
-          console.log(res.data)
+          //console.log(res.data)
           self.hashCode = res.data;
       } 
     })

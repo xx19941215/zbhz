@@ -50,15 +50,21 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad (option) {
-    let hashCode = app.getHash();
+    //console.log(this.data.isShare);
+    let hashCode = app.hashCode;
+    console.log(hashCode);
     if (hashCode.indexOf(option.hashCode) != -1) {
+      console.log('不是分享');
       this.setData({
         isShare: false
       });
+      console.log(this.data.isShare);
     } else {
+      console.log('是分享');
       this.setData({
         isShare: true
       });
+      console.log(this.data.isShare);
     }
 
     wx.showLoading({

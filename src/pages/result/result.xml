@@ -17,21 +17,30 @@
         <view class="result-story">
             <image src="/images/result/{{ currentFace }}"></image>
         </view>
-        <view class="result-radar-ctn" wx:if="{{ !isSahre }}">
+
+        <view class="result-radar-ctn" wx:if="{{!isShare}}">
             <view class="result-radar">
                 <canvas canvas-id="radarCanvas" class="canvas" bindtouchstart="touchHandler"></canvas>
             </view>
         </view>
-        <view class="result-content-ctn" wx:if="{{ !isSahre }}">
+        <view class="result-content-ctn" wx:if="{{!isShare}}">
             <view class="result-content">
               {{ introduction }}
             </view>
         </view>
-        <view class="coupon-btn" bindtap="coupon">
-            <image src="/images/result/fourth_bt_lqdqxw@2x.png"></image>
-        </view>
-        <navigator class="coupon-btn" url="../index/index" wx:if="{{ isSahre }}">
+        <block wx:if="{{ isShare }}">
+          <navigator class="coupon-btn" url="../index/index">
           <image class="to-divine" src="/images/result/fifth_bt_wyyhz@2x.png"></image>
         </navigator>
+        </block>
+        <block wx:else>
+          <view class="coupon-btn" bindtap="coupon">
+            <image src="/images/result/fourth_bt_lqdqxw@2x.png"></image>
+          </view>
+          <view class="share-btn">
+            <button open-type="share" plain="true">转发给微信好友</button>
+          </view>
+        </block>
+        
     </view>
 </view>

@@ -820,7 +820,7 @@ function drawRadarLabel(angleList, radius, centerPosition, opts, config, context
         } else if (pos.x < 0) {
             startX -= measureText(opts.categories[index] || '');
         }
-        console.log('oooo');
+
         context.fillText(opts.categories[index] || '', startX, startY + config.fontSize / 2);
     });
     context.stroke();
